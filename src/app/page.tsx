@@ -8,9 +8,9 @@ import story3 from '../../public/gdsc-stories-3.jpg'
 
 export default function Home() {
   return (
-   <main className='text-gray-900' >
+   <main className='text-gray-900 font-Roboto border-borderGray ' >
     <nav className='fixed top-0 left-0 w-full bg-white text-gray-600 z-50 shadow-lg text-sm' >
-      <div className='flex px-6  w-full h-12 border-b-1 border-borderGray' >
+      <div className='flex px-6  w-full h-12 border-b-1' >
         <a className='my-auto w-[180px] ' href="https://developers.google.com/">
           <Image className='' src={GoogleLogo} alt='Google_Logo' width={180} height={180} />
         </a>
@@ -75,10 +75,10 @@ export default function Home() {
       </div>
     </nav>
 
-      <div className='pt-5 mt-12 text-sm bg-[#d8eef9] text-center w-full h-[64px] w6:mt-24 ' >
+      <div className='pt-5 mt-12 text-sm bg-lightBlue text-center w-full h-[64px] w6:mt-24 ' >
         <h3 className='text-[#0288d1]' >Learn new Google tools with your community. 
-        <a className='font-bold' href="https://developers.google.com/community/devfest#find-a-devfest-community-near-you"
-        >Find a DevFest near you!</a></h3>
+        <a className='font-bold underline ' href="https://developers.google.com/community/devfest#find-a-devfest-community-near-you"
+        > Find a DevFest near you!</a></h3>
       </div>
 
     <section className='px-6 ' >
@@ -91,13 +91,13 @@ export default function Home() {
         <div className='flex gap-4 w-full  justify-center' >
           <a href="https://gdsc.community.dev/">
             <button className='border-1 px-5 py-[6px] rounded-[4px] text-sm 
-              bg-[#1a73e8] borderbg-[#1a73e8] text-white hover:bg-[#1364ce]' >
+              bg-[#1a73e8] borderbg-[#1a73e8] text-white hover:bg-bltext-blue' >
                 Join a Club
             </button>
           </a>
           <a href="https://developers.google.com/community/gdsc/leads">
-            <button className='border-1 px-5 py-[6px] text-[#1364ce] border-gray-300 rounded-[4px] text-sm 
-              bg-[#d8eef9] ' >
+            <button className='border-1 px-5 py-[6px] text-blue border-gray-300 rounded-[4px] text-sm 
+              bg-lightBlue ' >
                 Lead a Club
             </button>       
           </a>
@@ -124,18 +124,21 @@ export default function Home() {
           </div>
         </div>   
       </div>
-      <div className='flex mt-16 ' >
-        <div className='flex-1 aspect-video ' >
+      <div className='flex gap-6 mt-16 max-sm:flex-col ' >
+        <div className='flex-1 ' >
+        <div className='w-full aspect-video bg-black '></div>
           {/* <Image src='https://youtu.be/Jqf52nThBt0' alt='youtube video' width='100' height='100' ></Image> */}
         </div>
-        <div className='flex-1 p-4 pt-10 text-center ' >
-          <h1 className='text-xl font-semibold' >“Showing more representation in tech with GDSC greatly increases our confidence, innovation, and performance.
-             Especially in academic environments, having a sense of belonging and community for students can lead to success
-              in tech together.”
-          </h1>
-          <Image className='mx-auto rounded-full m-4 ' src={ChloeQuijano} alt="Chloe Quijano" width='50' height='50' />
-          <p className='text-gray-600' >Chloe Quijano</p>
-          <p className='text-gray-600' >GDSC Lead, University of Toronto</p>
+        <div className='flex-1 flex items-center text-center ' >
+          <div>
+            <h1 className='text-xl' >“Showing more representation in tech with GDSC greatly increases our confidence, innovation, and performance.
+              Especially in academic environments, having a sense of belonging and community for students can lead to success
+                in tech together.”
+            </h1>
+            <Image className='mx-auto rounded-full m-4 ' src={ChloeQuijano} alt="Chloe Quijano" width='50' height='50' />
+            <p className='text-gray-600' >Chloe Quijano</p>
+            <p className='text-gray-600' >GDSC Lead, University of Toronto</p>
+          </div>
         </div>
       </div>
     </section>
@@ -147,7 +150,7 @@ export default function Home() {
             sexual orientation, disabilities, neurodiversity, physical appearance, size, ethnicity, nationality, race, age, religion, or other protected category.
           </p>
           <a href="https://developers.google.com/community-guidelines">
-            <button className='border-1 mx-auto mt-5 px-5 py-[6px] text-[#1364ce] rounded-[4px] text-sm bg-white hover:bg-[#d8eef9] ' >
+            <button className='border-1 mx-auto mt-5 px-5 py-[6px] text-blue rounded-[4px] text-sm bg-white hover:bg-lightBlue ' >
               Read The Guidlines
             </button>
           </a>
@@ -161,12 +164,12 @@ export default function Home() {
           <div className='flex gap-4' >
           <a href="https://developers.google.com/community/gdsc/stories">
             <button className='border-1 px-5 py-[6px] rounded-[4px] text-sm 
-              bg-[#1a73e8] borderbg-[#1a73e8] text-white hover:bg-[#1364ce]' >
+              bg-blue border-lightBlue text-white hover:bg-bltext-blue' >
                 View more stories
             </button>
           </a>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLScaBvL2D6b7BJZ7jwtRrWIbXYGnFxSddIFC-0tHnCdgNVmMuA/viewform">
-            <button className='border-1 px-5 py-[6px] text-[#1364ce] border-gray-300 rounded-[4px] text-sm bg-white hover:bg-[#d8eef9] ' >
+            <button className='border-1 px-5 py-[6px] text-blue border-gray-300 rounded-[4px] text-sm bg-white hover:bg-lightBlue ' >
                 Submit your story
             </button>       
           </a>
@@ -180,9 +183,9 @@ export default function Home() {
             <div className='flex flex-col p-3 justify-between min-h-[270px]' >
               <div>
                 <h2 className='text-xs' >GOOGLE DEVELOPER STUDENT CLUBS</h2>
-                <h1 className='text-2xl mt-2 text-[#1364ce]' >Creating a STEM culture on campus in Uganda</h1>
+                <h1 className='text-2xl mt-2 text-blue' >Creating a STEM culture on campus in Uganda</h1>
               </div>
-              <button className='border-1 px-5 text-[#1364ce] border-gray-300 rounded-[4px] h-9 w-fit text-sm bg-white hover:bg-[#d8eef9] ' >
+              <button className='border-1 px-5 text-blue border-gray-300 rounded-[4px] h-9 w-fit text-sm bg-white hover:bg-lightBlue ' >
                   Read Now
               </button>       
             </div>
@@ -194,9 +197,9 @@ export default function Home() {
             <div className='flex flex-col p-3 justify-between min-h-[270px]' >
               <div>
                 <h2 className='text-xs' >GOOGLE DEVELOPER STUDENT CLUBS</h2>
-                <h1 className='text-2xl mt-2 text-[#1364ce]' >Meet Rose Niousha, GDSC Waseda Founder & WTM Ambassador</h1>
+                <h1 className='text-2xl mt-2 text-blue' >Meet Rose Niousha, GDSC Waseda Founder & WTM Ambassador</h1>
               </div>
-              <button className='border-1 px-5 text-[#1364ce] border-gray-300 rounded-[4px] h-9 w-fit text-sm bg-white hover:bg-[#d8eef9] ' >
+              <button className='border-1 px-5 text-blue border-gray-300 rounded-[4px] h-9 w-fit text-sm bg-white hover:bg-lightBlue ' >
                   Read Now
               </button>       
             </div>
@@ -208,16 +211,86 @@ export default function Home() {
             <div className='flex flex-col p-3 justify-between min-h-[270px]' >
               <div>
                 <h2 className='text-xs' >GOOGLE DEVELOPER STUDENT CLUBS</h2>
-                <h1 className='text-2xl mt-2 text-[#1364ce]' >GDSC Lead in Islamabad Develops Proof of Concept Android Application to Prevent Counterfeiting</h1>
+                <h1 className='text-2xl mt-2 text-blue' >GDSC Lead in Islamabad Develops Proof of Concept Android Application to Prevent Counterfeiting</h1>
               </div>
-              <button className='border-1 px-5 text-[#1364ce] border-gray-300 rounded-[4px] h-9 w-fit text-sm bg-white hover:bg-[#d8eef9] ' >
+              <button className='border-1 px-5 text-blue border-gray-300 rounded-[4px] h-9 w-fit text-sm bg-white hover:bg-lightBlue ' >
                   Read Now
               </button>       
             </div>
           </a>
         </div>
       </div>
+      <div className='flex mt-16 gap-6 max-sm:flex-col ' >
+        <div className='flex-1 flex items-center' >
+          <div>
+            <h1 className='text-3xl' >Google Developer Student Clubs Leads </h1>
+            <h1 className='text-gray-600 mt-6' >GDSC leads are passionate about helping their peers learn technology and connect.
+            Leads pursue various degrees within undergraduate and graduate programs, but have foundational knowledge about software development.</h1>
+            <h1 className='text-gray-600 mt-6' >Read the FAQ below for details on the application process.</h1>
+            <button className='border-1 px-5 py-[6px] rounded-[4px] text-sm mt-6 
+                bg-[#1a73e8] text-white hover:bg-bltext-blue' >
+                  Lead a club
+            </button>
+          </div>
+        </div>
+        <div className='flex-1' >
+          <div className='w-full aspect-video bg-black '></div>
+          {/* <Image src='https://youtu.be/Jqf52nThBt0' alt='youtube video' width='100' height='100' ></Image> */}
+          <h1 className='text-xs p-1 w-fit rounded-sm text-blue bg-lightBlue mt-6' >GOOGLE DEVELOPER STUDENT CLUBS </h1>
+          <h1 className='text-2xl text-blue mt-6' >GDSC Spotlight: A conversation with GDSC lead, Dang Nguyen </h1>
+          <button className='border-1 px-5 mt-10 text-blue border-gray-300 rounded-[4px] h-9 w-fit text-sm bg-white hover:bg-lightBlue ' >
+                  Watch now
+          </button>  
+        </div>
+      </div>
+      <div className='mt-24 text-gray-600 '>
+        <h1 className='text-2xl text-gray-800' >FAQs</h1>
+        <div className='w-full mt-6 ' >
+          <h2 className='border-b-1 text-blue  py-3' >Who should join Google Developer Student Clubs?</h2>
+          <h2 className='border-b-1 py-3' >Who should join Google Developer Student Clubs?</h2>
+        </div>
+        <div className='w-full ' >
+          <h2 className='border-b-1 text-blue  py-3' >Who should join Google Developer Student Clubs?</h2>
+          <h2 className='border-b-1 py-3' >Who should join Google Developer Student Clubs?</h2>
+        </div>
+        <div className='w-full ' >
+          <h2 className='border-b-1 text-blue  py-3' >Who should join Google Developer Student Clubs?</h2>
+          <h2 className='border-b-1 py-3' >Who should join Google Developer Student Clubs?</h2>
+        </div>
+      </div>
     </div>
+      <div className='w-full mt-36 py-10 bg-[#1a73e8] ' >
+        <div className='flex flex-col w-full  justify-center text-center text-white' >
+          <h1 className='font-semibold text-3xl ' >Stay in touch</h1>
+          <div className='flex gap-3 mx-auto w-fit' >
+            <a href="https://developers.google.com/community-guidelines">
+              <button className='border-1 mx-auto mt-5 px-5 py-[6px] text-blue rounded-[4px] text-sm bg-white hover:bg-lightBlue ' >
+                facebook
+              </button>
+            </a>
+            <a href="https://developers.google.com/community-guidelines">
+              <button className='border-1 mx-auto mt-5 px-5 py-[6px] text-blue rounded-[4px] text-sm bg-white hover:bg-lightBlue ' >
+                facebook
+              </button>
+            </a>
+            <a href="https://developers.google.com/community-guidelines">
+              <button className='border-1 mx-auto mt-5 px-5 py-[6px] text-blue rounded-[4px] text-sm bg-white hover:bg-lightBlue ' >
+                facebook
+              </button>
+            </a>
+            <a href="https://developers.google.com/community-guidelines">
+              <button className='border-1 mx-auto mt-5 px-5 py-[6px] text-blue rounded-[4px] text-sm bg-white hover:bg-lightBlue ' >
+                facebook
+              </button>
+            </a>
+            <a href="https://developers.google.com/community-guidelines">
+              <button className='border-1 mx-auto mt-5 px-5 py-[6px] text-blue rounded-[4px] text-sm bg-white hover:bg-lightBlue ' >
+                facebook
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
    </main>
   )
