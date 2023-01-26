@@ -11,6 +11,15 @@ module.exports = {
       },
       borderWidth: {
         1: '1px'
+      },    
+      screens:{
+        xm:'900px',
+        w1: '1290px',
+        w2: '1230px',
+        w3: '1160px',
+        w4: '1060px',
+        w5: '960px',
+        w6: '860px',
       }
     },
   },
