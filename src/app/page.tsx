@@ -104,20 +104,20 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <div className='flex justify-between gap-5 flex-wrap md:flex-wrap' >
-          <div className='flex flex-wrap md:flex-nowrap'>
-            <div className='w-full md:w-1/2 lg:w-1/3' >
+        <div className='flex flex-wrap md:flex-nowrap gap-6' >
+          <div className='flex gap-6 max-sm:flex-wrap'>
+            <div className='' >
               <h1 className='text-xl font-medium ' >Connect</h1>
               <h2 className=' text-gray-600 text-md mt-4 ' >Meet students interested in developer technologies at your college or university.
                 All are welcome, including those with diverse backgrounds and different majors.</h2>
             </div >
-            <div className='w-full md:w-1/2 lg:w-1/3'>
+            <div className=''>
               <h1 className='text-xl font-medium ' >Learn</h1>
               <h2 className=' text-gray-600 text-md mt-4 ' >Learn about a range of technical topics and gain new skills through hands-on workshops,
                 events, talks, and project-building activities online and in-person.</h2>
             </div>
           </div>
-          <div className='w-full md:w-1/2 lg:w-1/3'>
+          <div className=''>
             <h1 className='text-xl font-medium ' >Grow</h1>
             <h2 className=' text-gray-600 text-md mt-4 ' >Apply new learnings to build great solutions for local problems. Advance your skills,
                career, and network. Give back to your community by helping others learn.</h2>
@@ -127,7 +127,6 @@ export default function Home() {
       <div className='flex gap-6 mt-16 max-sm:flex-col ' >
         <div className='flex-1 ' >
         <div className='w-full aspect-video bg-black '></div>
-          {/* <Image src='https://youtu.be/Jqf52nThBt0' alt='youtube video' width='100' height='100' ></Image> */}
         </div>
         <div className='flex-1 flex items-center text-center ' >
           <div>
@@ -143,9 +142,8 @@ export default function Home() {
       </div>
     </section>
     <section>
-      <div className='w-full mt-16 py-10 px-6 bg-[#1a73e8] ' >
-        <div className='mx-auto text-center text-white w-[856px]' >
-          <h1 className='font-semibold text-3xl ' >Our Community Guigelines</h1>
+      <div className='w-full mt-16 py-10 px-6 text-center text-white bg-[#1a73e8] ' >
+          <h1 className=' text-3xl max-sm:text-xl ' >Our Community Guigelines</h1>
           <p className='mt-5' >Google is dedicated to providing a harassment-free and inclusive event experience for everyone regardless of gender identity and expression,
             sexual orientation, disabilities, neurodiversity, physical appearance, size, ethnicity, nationality, race, age, religion, or other protected category.
           </p>
@@ -154,7 +152,6 @@ export default function Home() {
               Read The Guidlines
             </button>
           </a>
-        </div>
       </div>
     <div className='px-6' >
       <div className='mt-16'>
