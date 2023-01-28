@@ -258,8 +258,8 @@ export default function Home() {
     </div>
       <div className='w-full mt-36 py-10 bg-[#1a73e8] ' >
         <div className='flex flex-col w-full  justify-center text-center text-white' >
-          <h1 className='font-semibold text-3xl ' >Stay in touch</h1>
-          <div className='flex gap-3 mx-auto w-fit' >
+          <h1 className='text-3xl ' >Stay in touch</h1>
+          <div className='flex mt-3 gap-3 mx-auto w-fit' >
             <a href="https://developers.google.com/community-guidelines">
               <button className='border-1 mx-auto mt-5 px-5 py-[6px] text-blue rounded-[4px] text-sm bg-white hover:bg-lightBlue ' >
                 facebook
@@ -287,6 +287,70 @@ export default function Home() {
             </a>
           </div>
         </div>
+      </div>
+      <div className='px-6 mt-6' >
+        <div className='flex flex-wrap sm:flex-nowrap gap-6' >
+            <div className='w-full flex flex-col gap-3 text-sm '>
+              <h2 className='text-gray-600 text-base' >Connect</h2>
+              <h3>Blog</h3>
+              <h3>Facebook</h3>
+              <h3>Medium</h3>
+              <h3>Twitter</h3>
+              <h3>Youtube</h3>          
+            </div >
+            <div className='w-full flex flex-col gap-3 text-sm '>
+              <h2 className='text-gray-600 ' text-base>Programms</h2>
+              <h3>Women Techmakers</h3>
+              <h3>Google Developer Groups</h3>
+              <h3>Google Developer Experts</h3>
+              <h3>Accelerators</h3>
+              <h3>Google Developer Student Clubs</h3>             
+            </div>
+            <div className='w-full flex flex-col gap-3 text-sm '>
+              <h2 className='text-gray-600text-base' >Developer Consols</h2>
+              <h3>Google API console</h3>
+              <h3>Google Cloud console</h3>
+              <h3>Google Play console</h3>
+              <h3>Action on Google console</h3>
+              <h3>Firebase console</h3>
+              <h3>Cast SDK Developer console</h3>
+              <h3>Chrome Web Store Dashboard</h3>
+            </div>
+        </div>  
+        <div className='h-fit border-y-1 py-6 text-sm w-full md:h-20' >
+          <div className=' flex gap-6 flex-col md:flex-row ' >
+            <a className=' w-[180px] ' href="https://developers.google.com/">
+              <Image className='' src={GoogleLogo} alt='Google_Logo' width={180} height={180} />
+            </a>
+            <ul className='flex my-auto gap-3 flex-col md:gap-6 md:flex-row' >
+              <li><a href="https://developer.android.com/">Android</a></li>
+              <li><a href="https://developer.chrome.com/home">Chrome</a></li>
+              <li><a href="https://firebase.google.com/">Firebase</a></li>
+              <li><a href="https://cloud.google.com/">Gougle Cloud Platform</a></li>
+              <li><a href="https://developers.google.com/products">All Products</a></li>
+            </ul>
+          </div>
+        </div> 
+        <div className='flex items-center h-fit w-full py-6 text-sm md:h-20 ' >
+          <div className='my-auto flex flex-col md:flex-row ' >
+            <div className='flex h-fit' >
+              <p className='px-2' >Terms</p>
+              <div className='w-[1.1px] h-3 my-auto bg-gray-400' ></div>
+              <p className='px-2' >Privacy</p>
+            </div>
+            <div className='flex float-right ' >
+              <h2>Sign up for the Google Developers newsletter</h2>
+              <button className='border-1 px-5 text-blue border-gray-300 rounded-[4px] h-9 w-fit text-sm bg-white hover:bg-lightBlue ' >
+                  Watch now
+              </button> 
+              <a href="https://developers.google.com/community-guidelines">
+                <button className='border-1 mx-auto mt-5 px-5 py-[6px] text-blue rounded-[4px] text-sm bg-white hover:bg-lightBlue ' >
+                  facebook
+                </button>
+              </a>
+            </div>
+          </div>
+        </div> 
       </div>
     </section>
    </main>
